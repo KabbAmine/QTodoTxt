@@ -20,7 +20,7 @@ class TrayIcon(QtGui.QSystemTrayIcon):
 
     def _initIcon(self):
         view = self._controller.getView()
-        icon = getIcon('qtodotxt.png')
+        icon = getIcon('qtodotxt_tray.png')
         QtGui.QSystemTrayIcon.__init__(self, icon, view)
         self.activated.connect(self._onActivated)
         self.setToolTip('QTodoTxt')
